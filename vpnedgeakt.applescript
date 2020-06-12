@@ -1,6 +1,6 @@
 tell application "Terminal"
 	activate
-	set currentTab to do script ("ssh strom@192.168.1.1")
+	set currentTab to do script ("ssh user@xxx.xxx.xxx.xxx")
 	do script ("configure") in currentTab
 	do script ("delete firewall name WAN_LOCAL rule 30 disable") in currentTab
 	do script ("delete firewall name WAN_LOCAL rule 40 disable") in currentTab
