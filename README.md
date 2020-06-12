@@ -6,7 +6,7 @@ The script wont work without ssh key. You kan keystroke password in applescript 
 The script outputs command to the edgerouters CLI to enable/disable vpn firewall rules so use your correct rule name.
 This script relies on errors and therefor not exiting to early. But after 10 tries it closes to not make it rund infinity if any other errors occurs.
 # ssh key Mac and Edgerouter
-1. In mac terminal: ssh-keygen -t rsa (You might need to input size for exampel -b 2048.
+1. In mac terminal: ssh-keygen -t rsa (You might need to input size for exampel -b 2048)
 2. To save the key to mac type: ssh-add
 
 * Use loadkey to add key to edgrouter. This most be imported froma .pub file in edgrouters directory.
