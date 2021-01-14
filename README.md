@@ -14,10 +14,10 @@ You have to configure firewall rules manually first time according to pictures b
 You can activate/inactivate rules by adding/deleting this line in the script:
 
 **activate:**
-`<do script ("delete firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab>`
+`do script ("delete firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab`
 
 **inactivate:**
-`<do script ("set firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab>`
+`do script ("set firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab`
 
 Here are pictures of the GUI firewall rules:
 
