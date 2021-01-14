@@ -5,6 +5,15 @@ Applescript that enable/disable vpn on edgerouter via ssh. The script can then b
 The script wont work without ssh key. You can keystroke password in applescript but this is not recommend do to security.
 The script outputs commands to the edgerouters CLI to enable/disable vpn firewall rules so use your correct rule name.
 This script relies on errors and therefor not exiting to early. But after 10 tries it closes to not make it run infinity if any other errors occurs.
+
+# Setup
+Run vpn akt and the firewall rules will be set by itself without adding them manually first time. This script only blocks VPN connections via firewall. First you need to configure and setup your vpn solution. I recommend using l2tp over iPsec. You can find tutorial about setting up a vpn on youtube especially for the edgerouter series.
+
+Here are pictures of the GUI firewall rules:
+![interface](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/interface.PNG)
+
+![interface](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/rules.PNG)
+
 # ssh key Mac and Edgerouter
 1. In mac terminal: ssh-keygen -t rsa (You might need to input size for exampel -b 2048)
 2. To save the key to mac type: ssh-add
