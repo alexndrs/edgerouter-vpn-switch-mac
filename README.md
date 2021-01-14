@@ -21,6 +21,7 @@ Here are pictures of the GUI firewall rules:
 ![interface](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/interface.PNG)
 
 ex of where to find rule name:
+
 ![rulenumber](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/rulenumber.PNG?)
 
 
