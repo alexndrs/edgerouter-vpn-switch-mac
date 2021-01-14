@@ -1,1 +1,0 @@
-Config shown in readme on GitHub page. I use l2tp with rule number 70.
