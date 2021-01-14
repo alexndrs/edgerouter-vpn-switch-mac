@@ -8,8 +8,16 @@ This script relies on errors and therefor not exiting to early. But after 10 tri
 # ssh key Mac and Edgerouter
 1. In mac terminal: ssh-keygen -t rsa (You might need to input size for exampel -b 2048)
 2. To save the key to mac type: ssh-add
+3. ssh key saved in .ssh/id_rsa.pub give chmod 600.
+4. To show ssh key in terminal: cat .ssh/id_rsa.pub (load this text into edgerouter) OBS! include ex "ssh-rsa" and "username@host.local".
+Tutorial video: https://www.youtube.com/watch?v=E8-CfvumJBo
 
-* Use loadkey to add key to edgrouter. This most be imported from a .pub file in edgrouters directory.
+
+* Use loadkey to add key to edgrouter from a .pub file in edgrouters directory.
+1. cd into .ssh
+2. make a .pub file
+3. paste your ssh key and write, quit (:w!, :q!) ESC to ensure no mispressed keys.
+4. loadkey <path> (.pub file)
 For more about edgerouter shh key: https://youtu.be/rpAOl8UgfXM
 # Examples
 [Homebridge](https://homebridge.io/) with plugin [Applescript](https://www.npmjs.com/package/homebridge-applescript) makes a switch in the HomeKit app to turn on/off the VPN easily. Use "do shell script '' open /path''" to run your .app
