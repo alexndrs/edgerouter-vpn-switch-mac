@@ -1,6 +1,6 @@
 tell application "Terminal"
 	activate
-	set currentTab to do script ("ssh strom@192.168.1.1")
+	set currentTab to do script ("ssh user@192.168.1.1")
 	do script ("configure") in currentTab
 	-- Turning off rules that otherwise allows vpn connections
 	do script ("set firewall name WAN_LOCAL rule 40 disable") in currentTab
