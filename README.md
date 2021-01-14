@@ -18,6 +18,7 @@ inactivate:
 do script ("set firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab
 
 Here are pictures of the GUI firewall rules:
+(I use default action drop)
 ![interface](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/interface.PNG)
 
 ex of where to find rule name:
