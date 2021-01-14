@@ -9,17 +9,19 @@ This script relies on errors and therefor not exiting to early. But after 10 tri
 # Setup
 You have to configure firewall rules manually first time according to pictures below. Change the rule numbers in the script so that they correspond to the numbers on your firewall rules. This script only blocks VPN connections via firewall. First you need to configure and setup your vpn solution. I recommend using l2tp over iPsec. You can find tutorial about setting up a vpn on youtube especially for the edgerouter series.
 
+-
+
 You can activate/inactivate rules by adding/deleting this line in the script:
 
-activate:
-do script ("delete firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab
+**activate:**
+`<do script ("delete firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab>`
 
-inactivate:
-do script ("set firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab
+**inactivate:**
+`<do script ("set firewall name WAN_LOCAL rule <your_firewall_rulenumber> disable") in currentTab>`
 
 Here are pictures of the GUI firewall rules:
 
-(I use default action drop)
+**(I use default action drop)**
 ![interface](https://github.com/alexndrs/edgerouter-vpn-switch-mac/blob/master/pictures/interface.PNG)
 
 ex of where to find rule name:
